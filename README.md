@@ -224,7 +224,7 @@ Una vez abierto nuestro Codespace en el navegador, en esta sección necesitamos 
 
 Procedemos a construir nuestro bot:
 
-1. En el asistente de GH Copilot escribimos el siguiente prompt: "Como desarrollador, necesito crear una aplicación web de tipo bot en .Net Core llamada YourBot, donde utilice el template de EchoBot del Bot Framework de Microsoft". Si la Respuesta es similar a la siguiente imagen le damos clic en botón de thumbs up para indicar que lo que nos recomendó fue acertado (con eso le indicamos a GH Copilot que nos dio una respuesta correcta y en futuras interacciones no dará respuestas mas adecuadas). ![alt text](images/image-8.png)
+1. En el asistente de GH Copilot escribimos el siguiente prompt: "Como desarrollador, necesito crear una aplicación web de tipo bot en .Net Core llamada YourBot, donde utilice el template de YourBot del Bot Framework de Microsoft". Si la Respuesta es similar a la siguiente imagen le damos clic en botón de thumbs up para indicar que lo que nos recomendó fue acertado (con eso le indicamos a GH Copilot que nos dio una respuesta correcta y en futuras interacciones no dará respuestas mas adecuadas). ![alt text](images/image-8.png)
 
 2. Es importante recalcar que la estructura del prompt anterior es del tipo "Zero Prompt", sin embargo al usar técnicas como especificar cual es nuestro rol, expresar una acción y detallar un contexto nos permite tener respuestas mas certeras para usarlas en el desarrollo de nuestra solución. Ahora necesitamos aplicar lo que nos recomienda. Para esto vamos a instalar las platillas , abrimos una terminal en el Codespace de la siguiente forma: Menu Contextual -> Terminal -> New Terminal ![alt text](images/image-9.png)
 
@@ -236,7 +236,7 @@ Procedemos a construir nuestro bot:
 
 5. Aplicamos las recomendaciones e intentamos ejecutar el comando anterior y vemos que esta mal de nuevo. ![alt text](images/image-399.png)
 
-6. Es posible que ya no se encuentre este paquete por lo que vamos a cambiar nuestro prompt anterior. Necesitamos usar el template de EchoBot, por lo que necesitamos ejecutar el siguiente prompt "Como desarrollador, necesito crear una aplicación web de tipo bot en .Net Core llamada YourBot, donde utilice el template de EchoBot del Bot Framework de Microsoft. El template de EchoBot para C# lo necesito instalar con el comando dotnet -i, usando dotnet new -i Microsoft.Bot.Framework.CSharp.EchoBot"![alt text](images/image-499.png)
+6. Es posible que ya no se encuentre este paquete por lo que vamos a cambiar nuestro prompt anterior. Necesitamos usar el template de YourBot, por lo que necesitamos ejecutar el siguiente prompt "Como desarrollador, necesito crear una aplicación web de tipo bot en .Net Core llamada YourBot, donde utilice el template de YourBot del Bot Framework de Microsoft. El template de YourBot para C# lo necesito instalar con el comando dotnet -i, usando dotnet new -i Microsoft.Bot.Framework.CSharp.YourBot"![alt text](images/image-499.png)
 
 7. Seguimos las recomendaciones ejecutamos el comando ![alt text](images/image-599.png)
 
@@ -248,17 +248,17 @@ Procedemos a construir nuestro bot:
 
 11. El api de nuestro bot esta lista. ![alt text](images/image-999.png)
 
-12. Ahora ya tenemos el cascaron de nuestro bot, podemos usar una funcionalidad para realizar un renombre en el archivo de YourBot/Bots/EchoBots.cs. Vamos entender como esta conformada esta clase. Abrimos el archivo ![alt text](images/image-1099.png)
+12. Ahora ya tenemos el cascaron de nuestro bot, podemos usar una funcionalidad para realizar un renombre en el archivo de YourBot/Bots/YourBots.cs. Vamos entender como esta conformada esta clase. Abrimos el archivo ![alt text](images/image-1099.png)
 
 13. Puede resultar confuso si no tengo el conocimiento de como funciona un bot, por tal motivo vamos a pedirle a GH Copilot para que nos explique. Abrimos el GH Copilot Chat y con el archivo abierto escribimos @workspace /explain. ![alt text](images/image-1199.png)
 
 14. GH Copilot nos explica el contenido de nuestro Bot ![alt text](images/image-1299.png)
 
-15. Pedimos a Copilot que nos ayude a renombrar EchoBot por YourBot, para esto escribimos el siguiente prompt "Renombrar EchoBot.cs por YourBot" ![alt text](images/image-1399.png)
+15. Pedimos a Copilot que nos ayude a renombrar YourBot por YourBot, para esto escribimos el siguiente prompt "Renombrar YourBot.cs por YourBot" ![alt text](images/image-1399.png)
 
-16. Seguimos el procedimiento para realizar el rename de EchoBot.cs ![alt text](images/image-1499.png)
+16. Seguimos el procedimiento para realizar el rename de YourBot.cs ![alt text](images/image-1499.png)
 
-17. Cambiamos donde diga EchoBot por YourBot presionamos Ctrl+Shipt+H y reemplazamos ![alt text](images/image-1599.png)  
+17. Cambiamos donde diga YourBot por YourBot presionamos Ctrl+Shipt+H y reemplazamos ![alt text](images/image-1599.png)  
 
 18. Volvemos a ejecutar el bot, abrimos a la terminal y ejecutamos el siguiente comando: "dotnet run" ![alt text](images/image-1699.png)
 

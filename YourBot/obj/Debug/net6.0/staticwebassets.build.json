@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "YqRYmSXE105W2DcKazKCCwuhDjeBFJ9kWlbLy1/kW8Y=",
+  "Source": "YourBot",
+  "BasePath": "_content/YourBot",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "YourBot/wwwroot",
+      "Source": "YourBot",
+      "ContentRoot": "/workspaces/mtc-cloud-academy-openai-ghcopilot-jabb/YourBot/wwwroot/",
+      "BasePath": "_content/YourBot",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/workspaces/mtc-cloud-academy-openai-ghcopilot-jabb/YourBot/wwwroot/default.html",
+      "SourceId": "YourBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "/workspaces/mtc-cloud-academy-openai-ghcopilot-jabb/YourBot/wwwroot/",
+      "BasePath": "_content/YourBot",
+      "RelativePath": "default.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/default.html"
+    }
+  ]
+}
